@@ -32,6 +32,16 @@ elif a==b:
 	
 	Nxx=0.5*(1-Nzz)
 	Nyy=0.5*(1-Nzz)
+	
+elif b==c:
+	k=(np.sin(psi))/(np.sin(v))
+	alpha=np.arcsin(k)
+	prefac_Nx=(np.cos(psi)*np.cos(v))/(((np.sin(v))**3)*(np.sin(alpha))**2)
+	Nxx=prefac_Nx*(F(k,v)-E(k,v))
+	
+	Nyy=0.5*(1-Nxx)
+	Nzz=0.5*(1-Nxx)
+	
 else:
 	k=(np.sin(psi))/(np.sin(v))
 	alpha=np.arcsin(k)

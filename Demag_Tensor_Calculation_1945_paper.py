@@ -13,13 +13,9 @@ a=float(input('Enter a = ' ))
 b = float(input('Enter b = ' ))
 c = float(input('Enter c = ' ))
 
-cos_v=c/a
-v=np.arccos(cos_v)
+v=np.arccos(c/a)
 
-cos_psi=b/a
-psi=np.arccos(cos_psi)
-
-
+psi=np.arccos(b/a)
 
 if a==b and b==c:
 	Nxx=1/3.0
